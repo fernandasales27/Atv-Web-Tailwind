@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página com Backgrounds e Tamanhos Diferentes</title>
+    <title>Layout com Grid e Tailwind CSS</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Gradiente de fundo para a div com gradiente */
-        .bg-gradient {
-            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Exemplo de gradiente */
-        }
-    </style>
 </head>
-<body class="p-6 bg-gray-100">
-    <div class="mb-6 p-6 w-64 h-32 border-4 border-red-500 bg-red-100 text-red-600 text-center rounded-lg shadow-md">
-        Div 1: Fundo vermelho claro
-    </div>
-    <div class="mb-6 p-6 w-80 h-40 border-4 border-blue-500 bg-blue-100 text-blue-600 text-center rounded-lg shadow-md">
-        Div 2: Fundo azul claro
-    </div>
-    <div class="mb-6 p-6 w-96 h-48 border-4 border-green-500 bg-green-100 text-green-600 text-center rounded-lg shadow-md">
-        Div 3: Fundo verde claro
-    </div>
-    <div class="p-6 w-72 h-36 border-4 border-yellow-500 bg-gradient text-yellow-600 text-center rounded-lg shadow-md">
-        Div 4: Gradiente de fundo
+<body class="p-6 bg-gray-200">
+    <div class="grid grid-cols-3 gap-4 p-4 bg-white rounded-lg shadow-md">
+        <div class="bg-red-500 h-24 col-span-2">
+            Div 1: Ocupa 2 colunas
+        </div>
+        <div class="bg-blue-500 h-24">
+            Div 2
+        </div>
+        <div class="bg-green-500 h-24">
+            Div 3
+        </div>
+        <div class="bg-yellow-500 h-24">
+            Div 4
+        </div>
+        <div class="bg-purple-500 h-24 col-span-3">
+            Div 5: Ocupa 3 colunas
+        </div>
     </div>
 </body>
 </html>
