@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout com Grid e Tailwind CSS</title>
+    <title>Layout Responsivo com Tailwind CSS</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="p-6 bg-gray-200">
-    <div class="grid grid-cols-3 gap-4 p-4 bg-white rounded-lg shadow-md">
-        <div class="bg-red-500 h-24 col-span-2">
-            Div 1: Ocupa 2 colunas
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 bg-white rounded-lg shadow-md">
+        <div class="bg-red-500 h-24 col-span-1">
+            Div 1: Coluna única em telas pequenas, até 4 colunas em telas grandes
         </div>
-        <div class="bg-blue-500 h-24">
+        <div class="bg-blue-500 h-24 col-span-1">
             Div 2
         </div>
-        <div class="bg-green-500 h-24">
+        <div class="bg-green-500 h-24 col-span-1">
             Div 3
         </div>
-        <div class="bg-yellow-500 h-24">
+        <div class="bg-yellow-500 h-24 col-span-1">
             Div 4
         </div>
-        <div class="bg-purple-500 h-24 col-span-3">
-            Div 5: Ocupa 3 colunas
+        <div class="bg-purple-500 h-24 col-span-1">
+            Div 5
         </div>
     </div>
 </body>
