@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
-  purge: ['./*.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./*.html'],
+  darkMode: 'media', // ou remova se não precisar
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      colors: {
+        meuTema: {
+          primary: '#ffcbdb',  // rosa personalizado
+          secondary: '#a4fff7', // verde-agua personalizado
+        }
+      },
+    },
   },
   plugins: [],
 }
-
 

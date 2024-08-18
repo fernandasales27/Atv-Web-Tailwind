@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Responsivo com Tailwind CSS</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Usando Diretiva do Novo Tema</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+         .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 <body class="p-6 bg-gray-200">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 bg-white rounded-lg shadow-md">
-        <div class="bg-red-500 h-24 col-span-1">
-            Div 1: Coluna única em telas pequenas, até 4 colunas em telas grandes
+        <div class="bg-meuTema-primary h-24 col-span-1 text-white flex items-center justify-center rounded-lg shadow-md text-shadow">
+            Div 1: Rosa
         </div>
-        <div class="bg-blue-500 h-24 col-span-1">
-            Div 2
+        <div class="bg-meuTema-secondary h-24 col-span-1 text-white flex items-center justify-center rounded-lg shadow-md text-shadow">
+            Div 2: Verde-água 
         </div>
-        <div class="bg-green-500 h-24 col-span-1">
-            Div 3
+        <div class="bg-meuTema-primary h-24 col-span-1 text-white flex items-center justify-center rounded-lg shadow-md text-shadow">
+            Div 3: Rosa
         </div>
-        <div class="bg-yellow-500 h-24 col-span-1">
-            Div 4
+        <div class="bg-meuTema-secondary h-24 col-span-1 text-white flex items-center justify-center rounded-lg shadow-md text-shadow">
+            Div 4: Verde-água 
         </div>
-        <div class="bg-purple-500 h-24 col-span-1">
-            Div 5
+        <div class="bg-meuTema-primary h-24 col-span-1 text-white flex items-center justify-center rounded-lg shadow-md text-shadow">
+            Div 5: Rosa
+        </div>
+        <!-- Nova Div Adicionada -->
+        <div class="bg-meuTema-secondary h-24 col-span-1 text-white flex items-center justify-center rounded-lg shadow-md text-shadow">
+            Div 6: Verde-água 
         </div>
     </div>
 
+    <!-- Botão com cores e estados personalizados -->
     <div class="mt-6 p-4 bg-white rounded-lg shadow-md">
-        <button class="px-4 py-2 bg-blue-500 text-white font-bold rounded-lg transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 focus:bg-blue-800 focus:outline-none active:bg-blue-900">
+        <button class="px-4 py-2 bg-meuTema-primary text-white font-bold rounded-lg shadow-md transition duration-300 ease-in-out hover:bg-meuTema-secondary focus:bg-meuTema-secondary focus:outline-none active:bg-meuTema-primary">
             Clique em mim!
         </button>
     </div>
